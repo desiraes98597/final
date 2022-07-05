@@ -4,7 +4,7 @@
     <Nuxt />
 <div>
     <section id="index">
-
+<p>Target:static</p>
       <header class="masthead bg-primary text-white text-center">
                     <div class="container d-flex align-items-center flex-column">
 
