@@ -1,20 +1,22 @@
-# assignment09
+# FINAL-MAIN
 
 ## Build Setup
+# download 
+
 
 ```bash
+# download project
+This final project has the assignment dependencies but does not include a "finished product". I will be removing most of the framework to actually publish the content, as I will not be looking to showcase these abilities in my actual portfolio page, but instead on a site that I will create as a seperate element. 
+
 # install dependencies
 $ yarn install
 
+$ yarn global add @vue/cli
+
+$ yarn add nuxt
+
 # serve with hot reload at localhost:3000
 $ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
