@@ -18,7 +18,7 @@ $ yarn global add @vue/cli
 
 $ yarn add nuxt
 
-# serve with hot reload at localhost:3000
+# view at localhost:3000
 $ yarn dev
 ```
 
