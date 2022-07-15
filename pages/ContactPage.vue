@@ -93,6 +93,19 @@ import FooterDiv from '../src/components/FooterDiv.vue'
 
 export default {
     name: "ContactPage",
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'description',
+            name: 'Contact Page',
+            content: 'This the my contact page'
+          }
+        ]
+      }
+    },
     components: {
         NavPage,
         FooterDiv

@@ -172,6 +172,19 @@ import NavPage from '../src/components/NavPage.vue'
 import FooterDiv from '../src/components/FooterDiv.vue'
 export default {
   name: "ResumePage",
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'description',
+            name: 'Resume Page',
+            content: 'This the my resume page'
+          }
+        ]
+      }
+    },
   components: {
     NavPage,
     FooterDiv

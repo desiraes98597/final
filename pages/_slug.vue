@@ -1,6 +1,6 @@
 <template>
 <div>
-   <NavPageBlog />
+   <NavPage />
      <Nuxt />
 
   <article>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import NavPageBlog from '../src/components/NavPageBlog.vue';
+import NavPage from '../src/components/NavPage.vue';
 import FooterDiv from '../src/components/FooterDiv.vue'
 export default {
     async asyncData({ $content, params }) {
@@ -20,7 +20,7 @@ export default {
         return { article };
     },
     components: {
-        NavPageBlog,
+        NavPage,
         FooterDiv
     },
 }

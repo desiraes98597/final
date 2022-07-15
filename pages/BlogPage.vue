@@ -1,22 +1,10 @@
 <template>
 <div>
-    <NavPageBlog />
+    <NavPage />
      <Nuxt />
       <h2 class="page-section-heading text-center text-uppercase text-white">
                 Hello {{ name }}, Welcome to the Blog page</h2>
-    <!-- <section class="page-section bg-primary text-white mb-0" id="blog">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white">
-                Hello {{ name }}, Welcome to the Blog page</h2>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-        </div>
-    </section> -->
-
-    <div class="home-page">
+     <div class="home-page">
 	  <h2>Latest Posts</h2>
 	  <div class="articles">
 		  <div class="article" v-for="article of articles" :key="article">
@@ -41,7 +29,7 @@
 
 <script>
 
-import NavPageBlog from '../src/components/NavPageBlog.vue'
+import NavPage from '../src/components/NavPage.vue'
 import FooterDiv from '../src/components/FooterDiv.vue'
 
 export default {
@@ -62,8 +50,21 @@ export default {
             name: ''
         }
     },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'description',
+            name: 'Blog Page',
+            content: 'This the my blog page'
+          }
+        ]
+      }
+    },
     components: {
-        NavPageBlog,
+        NavPage,
         FooterDiv
     },
     mounted() {
